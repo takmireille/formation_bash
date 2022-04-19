@@ -1,4 +1,5 @@
 #!/bin/bash
+# boucle while et comment la stopper
 while ((1))
 do
   echo 'hi!'
