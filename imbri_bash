@@ -1,0 +1,14 @@
+# exo imbric
+liste=("1" "5" "a" "b" "6" "c" "d" "8" "7")
+new_liste=()
+for element in "${liste[@]}"
+do 
+  re='[0-9]'
+  if [[ $element !~ $re ]] ; then
+  #if [[ $element == $re ]] ; then
+   # echo $element 
+    new_liste[${new_liste[@]}]=$element
+    echo $new_liste  
+   fi
+done
+
