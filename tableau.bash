@@ -1,4 +1,5 @@
 #!/bin/bash
+# ce script montre la declaration des tableaux bash
 # declarer un tableau par indice
 declare -a index_array=(142 65 2 98)
 #tableau associatif
