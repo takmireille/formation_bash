@@ -1,0 +1,49 @@
+/bin/bash
+
+# le but est de creer une arborescence et de s'exercer sur le deplacement des fichiers et leurs nomenclatures
+
+# 1- se medre dans le home personnel
+
+pwd
+cd /home/tak
+# 2- creer la structure du projet avec l'option p de mkdir
+
+mkdir -p Archive Compta{Bilan,AGenerale} Backup{2019,2020,2021,2022}
+
+# copie de la structure compta dans Archive
+cp Compta/* Archive
+#mkdir Compta/Bilan && mkdir Compta/AGenerale
+
+
+# creer les fichiers 2019.pdF 2020.pdF 2021.pdF 2022.pdF dans les dossiers Bilan et AGenerale du dossier Compta
+pwd
+# se rassurer qu'on est dans le home ~ 
+touch Compta/AGenerale/ 2019.pdF 2020.pdF 2021.pdF 2022.pdF && touch Compta/Bilan/ 2019.pdF 2020.pdF 2021.pdF 2022.pdF
+
+# creer les dossiers 2019 2020 2021 2022 dans le dossier Backup
+
+cd /home/tak/Backup
+mkdir 2019 2020 2021 2022
+# copier et renommer les fichiers 2019.pdF à 2020.pdF dans les dossiers respectif 2019 2020 2021 2022 situés dans le dossier Archive
+cp ../Compta/Bilan/2021.pdF 2021/B_2021.pdF && cp ../Compta/Bilan/2022.pdF 2022/B_2022.pdF && cp ../Compta/Bilan/2020.pdF 2020/B_2020.pdF && cp ../Compta/Bilan/2019.pdF 2019/B_2019.pdF
+ 
+# deplacer et renomer les fichiers 2019.pdF 2020.pdF 2021.pdF 2022.pdF des dossiers sources Bilan et Agenerale du dossier Compta dans les dossiers Bilan et Agenerale du dossier Archive
+
+pwd
+cd ../
+cd Archive/
+mv ../Compta/AGenerale/2021.pdF AGenerale/A_2021.pdF && mv ../Compta/AGenerale/2019.pdF AGenerale/A_2019.pdF && mv ../Compta/AGenerale/2020.pdF AGenerale/A_2020.pdF 
+mv ../Compta/Bilan/2021.pdF Bilan/A_2021.pdF && mv ../Compta/Bilan/2019.pdF Bilan/A_2019.pdF && mv ../Compta/Bilan/2021.pdF Bilan/A_2020.pdF
+
+# commande de verification
+pwd 
+cd /home/tak
+tree
+# le but est de verifier l'effecté des opérations
+
+
+
+
+
+
+

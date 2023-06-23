@@ -1,0 +1,35 @@
+# creer les utlisatuers, froues et attribution des Droits sur les dossiers 
+
+#1- creation des Users
+
+useradd nom_user
+# pour l'admin
+sudo useradd -p -m 0000 Admin avec -m pour creer le dossier
+#2 pour creer les passwd utliseateur
+ passwrd nom_user
+
+#3- creer les groupes
+
+groupadd nom_group
+
+# ajout des users au groupes
+Sudo usermod -G groupe user 
+sudo gpasswd -M user,.. Groupe 
+
+#1- accorder les different repertoire au user ou groupe
+
+chown propriétaire nom_fichier_ou dossier
+chown -R :admin .
+
+# attribuer les Dossiers aux differents groupes
+
+chgrp groupe Dossier
+
+# attribuer les droits au Users et au groupes 
+sudo chmod -R 770 noms des dossiers
+
+# pour retier les droits à un groupe 
+
+sudo chmod -R o=  dossiers
+
+
