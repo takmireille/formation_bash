@@ -1,0 +1,16 @@
+Travail à faire:
+- etablir un fichir de configuration "config.csv" dans le dossier parent "exo" . ce fichier aura les noms , prenoms et groupes correspondants 
+NB: les nomps et prenoms commence par une lettre majuscule. dans ce dossier nous aurons aussi notre script 
+- creer l'architecture suivante dans le dossier "exo"
+a) trois dossiers parents : Documents,Programme,Systeme
+- Dans Documents: creer les dossiers Compta (avec les dossiers Factures et Recus); RH (contenant les dossiers Contrats et CV); Marqueting( contenant les dossiers Campagnes et Images)
+- Dans le dossier Programmes : créer les dossiers "Code source" et Logiciels (contenant les dossiers Factures et "Gestion des RH")
+-Dans le dossier Systeme : créer les dossiers Backup et configuration
+b) attribution des groupes et des droits
+- créer les utlisateurs enregistrer le fichier config.csv de depart et leur atribuer les groupes correspondants
+NB: donner un mots de passe provisoir au utlisateurs
+- atribuer les perssions aux utlisateurs des differents groupes en fonction de leur roles
+NB: les groupes compta et RH auront en plus des permissions dans leurs groupes respectifs , des droits de lecture et d'ecriture respectivement sur les dossiers 
+Factures et "Gestion des RH"
+c) depacer le fichier config.csv dossier parent exo vers exo/Systeme/configuration/
+NB: ce fichier config.csv final devra avoir la configuration suivant: P.Nom de famille groupes 
