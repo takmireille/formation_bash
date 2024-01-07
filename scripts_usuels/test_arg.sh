@@ -12,3 +12,6 @@ arg2=$2
 echo "nom du script: $nom_script"
 echo "nombre d'argument: $nombre_arguments"
 echo "les 2 aguments sont: $arg1, $arg2"
+add=$(($arg1 + $arg2))
+
+echo " somme = $add "
